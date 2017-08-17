@@ -11,7 +11,7 @@
 </head>
 <body>
 	<div class="jumbotron text-center">
-		<h1>GPS Warning - BM</h1>
+		<h1>RASPED</h1>
     	<img src="https://image.ibb.co/hksXN5/RASPED.png" class="img-rounded" alt="Cinque Terre" width="100" height=auto>
   	</div>
 	<div class="text-center">
@@ -21,10 +21,10 @@
 			<div class="main-login-form">
 				<div class="login-group">
 					<div class="form-group">
-						<input type="text" class="form-control" id="lg_usuario" name="lg_usuario" placeholder="usuario" required>
+						<input type="text" name="telefono" id="telefono" pattern="^[9|8|7|6|5|4|3|2|1|0]\d{9}$">
 					</div>
 					<div class="form-group">
-						<input type="password" class="form-control" id="lg_contrasena" name="lg_contrasena" placeholder="contrasena" required>
+						<input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="contrasena" required>
 					</div>
 					<div class="form-group login-group-checkbox">
 						<input type="checkbox" id="lg_remember" name="lg_remember">
