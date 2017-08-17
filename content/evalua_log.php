@@ -47,24 +47,32 @@ if($usuario == "1"){
         session_start();
         $_SESSION["cupo"] = $cupo;
         header("location:root.php");
+    }else{
+        echo "contrasenia o telefono incorrecto";
     }
 }else if($usuario == "2"){
     if($contrasena_db == $contrasena_ing){
         session_start();
         $_SESSION["cupo"] = $cupo;
         header("location:admin.php");
+    }else{
+        echo "contrasenia o telefono incorrecto";
     }
 }else if($usuario == "3"){
     if($contrasena_db == $contrasena_ing){
         session_start();
         $_SESSION["cupo"] = $cupo;
         header("location:user.php");
+    }else{
+        echo "contrasenia o telefono incorrecto";
     }
 }else if($usuario == "4"){
     if($contrasena_db == $contrasena_ing){
         session_start();
         $_SESSION["cupo"] = $cupo;
         header("location:regis.php");
+    }else{
+        echo "contrasenia o telefono incorrecto";
     }
 }else{
     "error al validar datos";
