@@ -10,7 +10,7 @@ $contrasena_ing = $_REQUEST['contrasena'];
 
 //encriptar contrasena
 $contrasena_ing = md5($contrasena_ing);
-$contrasena_db = "null"
+$contrasena_db = "null";
 
 //generamos la consulta
 $sql = "SELECT PER.contrasena
