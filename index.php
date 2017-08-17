@@ -21,7 +21,7 @@
 			<div class="main-login-form">
 				<div class="login-group">
 					<div class="form-group">
-						<input type="text" class="form-control" name="telefono" id="telefono" pattern="^[9|8|7|6|5|4|3|2|1|0]\d{9}$">
+						<input type="text" class="form-control" name="telefono" id="telefono" placeholder="telefono" pattern="^[9|8|7|6|5|4|3|2|1|0]\d{9}$">    
 					</div>
 					<div class="form-group">
 						<input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="contrasena" required>
@@ -33,13 +33,13 @@
 				</div>
 				<button type="submit" class="login-button">
 					<span class="glyphicon glyphicon-arrow-up"></span>
-                </button>
+                		</button>
 			</div>
 			<div class="etc-login-form">
 				<p>Olvidaste tu contrasena? <a href="#">Click Aqui</a></p>
 				<p>Eres nuevo? <a href="#">Registrate aqui</a></p>
 			</div>
-			</form>
+		    </form>
 		</div>
 	</div>
 </body>
