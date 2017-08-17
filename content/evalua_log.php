@@ -7,13 +7,16 @@ or die("Ha sucedido un error inexperado en la conexion de la base de datos");
 
 //solicitamos las variables
 $contrasena_ing = $_REQUEST['contrasena'];
+$telefono = $_REQUEST['telefono'];
 
 //encriptar contrasena
 $contrasena_ing = md5($contrasena_ing);
 $contrasena_db = "null";
+$cupo = "null";
 
 //generamos la consulta
-$sql = "SELECT PER.contrasena
+$sql = "SELECT PER.contrasena,
+concat (CUP.fk_sede, CUP.cupo) as cupo
 FROM personal PER, telefonos TEL, cupos CUP, horarios HOR, puestos PUE,usuarios USU
 WHERE PER.fk_cupo = CUP.id_cupo and
 PER.fk_telefono = TEL.id_telefono and
@@ -27,11 +30,12 @@ if(!$result = mysqli_query($conexion, $sql)) die();
 
 while($row = mysqli_fetch_array($result)) { 
     $contrasena_db=$row['contrasena'];
+    $cupo=$row['cupo'];
 }
     
 //desconectamos la base de datos
 $close = mysqli_close($conexion) 
 or die("Ha sucedido un error inexperado en la desconexion de la base de datos");
   
-echo $contrasena_db . ", " . $contrasena_ing;    
+echo $contrasena_db . ", " . $contrasena_ing.", ".$cupo;    
 ?>
