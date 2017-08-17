@@ -1,4 +1,5 @@
 <?php
-$cupo=$_SESSION['cupo'];
+session_start();
+$cupo = $_SESSION['cupo'];
 echo $cupo;
 ?>
