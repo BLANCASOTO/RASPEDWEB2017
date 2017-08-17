@@ -12,7 +12,7 @@
 <body>
 	<div class="jumbotron text-center">
 		<h1>GPS Warning - BM</h1>
-    	<img src="images/logo.png" class="img-rounded" alt="Cinque Terre" width="100" height=auto>
+    	<img src="https://image.ibb.co/hksXN5/RASPED.png" class="img-rounded" alt="Cinque Terre" width="100" height=auto>
   	</div>
 	<div class="text-center">
   	<div class="logo">Acceder</div>
