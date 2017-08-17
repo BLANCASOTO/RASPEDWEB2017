@@ -18,7 +18,7 @@ $usuario = "null";
 //generamos la consulta
 $sql = "SELECT PER.contrasena,
 concat (CUP.fk_sede, CUP.cupo) as cupo,
-USU.usario
+USU.id_usuario as usuario
 FROM personal PER, telefonos TEL, cupos CUP, horarios HOR, puestos PUE,usuarios USU
 WHERE PER.fk_cupo = CUP.id_cupo and
 PER.fk_telefono = TEL.id_telefono and
