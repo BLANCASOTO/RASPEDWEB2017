@@ -17,7 +17,7 @@
 	<div class="text-center">
   	<div class="logo">Acceder</div>
   		<div class="login-form-1">
-			<form action="php/evalua_log.php" method="POST" name="form_log" class="text-left" >
+			<form action="content/evalua_log.php" method="POST" name="form_log" class="text-left" >
 			<div class="main-login-form">
 				<div class="login-group">
 					<div class="form-group">
