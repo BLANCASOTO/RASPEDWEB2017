@@ -41,6 +41,18 @@ while($row = mysqli_fetch_array($result)) {
 //desconectamos la base de datos
 $close = mysqli_close($conexion) 
 or die("Ha sucedido un error inexperado en la desconexion de la base de datos");
+
+if($usuario == "1"){
+    echo "root";
+}else if($usuario == "2"){
+    echo "admin";
+}else if($usuario == "3"){
+    echo "user";
+}else if($usuario == "4"){
+    echo "regis";
+}else{
+    "error al validar datos";
+}
   
 echo $contrasena_db . ", " . $contrasena_ing.", ".$cupo.", ".$usuario;    
 ?>
