@@ -43,16 +43,30 @@ $close = mysqli_close($conexion)
 or die("Ha sucedido un error inexperado en la desconexion de la base de datos");
 
 if($usuario == "1"){
-    echo "root";
+    if($contrasena_db == $contrasena_ing){
+        session_start();
+        $_SESSION["cupo"] = $cupo;
+        header("location:root.php");
+    }
 }else if($usuario == "2"){
-    echo "admin";
+    if($contrasena_db == $contrasena_ing){
+        session_start();
+        $_SESSION["cupo"] = $cupo;
+        header("location:admin.php");
+    }
 }else if($usuario == "3"){
-    echo "user";
+    if($contrasena_db == $contrasena_ing){
+        session_start();
+        $_SESSION["cupo"] = $cupo;
+        header("location:user.php");
+    }
 }else if($usuario == "4"){
-    echo "regis";
+    if($contrasena_db == $contrasena_ing){
+        session_start();
+        $_SESSION["cupo"] = $cupo;
+        header("location:regis.php");
+    }
 }else{
     "error al validar datos";
-}
-  
-echo $contrasena_db . ", " . $contrasena_ing.", ".$cupo.", ".$usuario;    
+}  
 ?>
