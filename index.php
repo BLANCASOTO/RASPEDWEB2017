@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<title>GPS Warning - BM</title>
-	<link rel="icon" type="image/ico" href="images/logo.ico" />
+	<title>RASPED</title>
+	<link rel="icon" type="image/png" href="https://image.ibb.co/hksXN5/RASPED.png" />
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap_logg.css" rel="stylesheet">		
 </head>
