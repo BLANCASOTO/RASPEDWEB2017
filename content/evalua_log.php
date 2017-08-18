@@ -149,6 +149,6 @@ $_SESSION['usuario_regis'] = $usuario;
 }else{
     "error al validar datos";
 }*/
-echo $contrasena_db . ", " .$contrasena_ing;
+echo $contrasena_db . ", " . $contrasena_ing;
 
 ?>
