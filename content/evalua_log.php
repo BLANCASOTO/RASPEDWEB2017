@@ -38,7 +38,7 @@ TEL.telefono,
 PER.contrasena,
 HOR.hr_nombre as horario,
 PUE.nombre_puesto as puesto,
-USU.usuario
+USU.id_usuario
 FROM personal PER, telefonos TEL, cupos CUP, horarios HOR, puestos PUE,usuarios USU
 WHERE PER.fk_cupo = CUP.id_cupo and
 PER.fk_telefono = TEL.id_telefono and
@@ -149,6 +149,4 @@ $_SESSION['usuario_regis'] = $usuario;
 }else{
     "error al validar datos";
 }
-echo $contrasena_db . ", " . $contrasena_ing;
-
 ?>
