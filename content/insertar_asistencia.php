@@ -75,6 +75,6 @@ $result_true = mysqli_query($conexion, $query_update_true) or die('$result_true 
   
   mysqli_close($conexion)or die("Error en desconexion");
 
-  echo "true";
+  echo "Registro exitoso";
   
 ?>
