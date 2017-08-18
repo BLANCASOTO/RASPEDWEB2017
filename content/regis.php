@@ -7,18 +7,18 @@ $conexion = mysqli_connect($server, $user, $pass,$bd)
 or die("Ha sucedido un error inexperado en la conexion de la base de datos");
 mysqli_set_charset($conexion, "utf8"); 
 
-$id_personal_admin = $_SESSION['id_personal_admin'];
-$sede_admin =$_SESSION['sede_admin'];
-$cupo_admin = $_SESSION['cupo_admin'];
-$nombre_personal_admin = $_SESSION['nombre_personal_admin'];
-$apellido_p_admin = $_SESSION['apellido_p_admin'];
-$apellido_m_admin = $_SESSION['apellido_m_admin'];
-$lada_admin = $_SESSION['lada_admin'];
-$telefono_admin = $_SESSION['telefono_admin'];
-$contrasena_admin = $_SESSION['contrasena_admin'];
-$horario_admin = $_SESSION['horario_admin'];
-$puesto_admin = $_SESSION['puesto_admin'];
-$usuario_admin = $_SESSION['usuario_admin'];
+$id_personal_regis = $_SESSION['id_personal_regis'];
+$sede_regis =$_SESSION['sede_regis'];
+$cupo_regis = $_SESSION['cupo_regis'];
+$nombre_personal_regis = $_SESSION['nombre_personal_regis'];
+$apellido_p_regis = $_SESSION['apellido_p_regis'];
+$apellido_m_regis = $_SESSION['apellido_m_regis'];
+$lada_regis = $_SESSION['lada_regis'];
+$telefono_regis = $_SESSION['telefono_regis'];
+$contrasena_regis = $_SESSION['contrasena_regis'];
+$horario_regis = $_SESSION['horario_regis'];
+$puesto_regis = $_SESSION['puesto_regis'];
+$usuario_regis = $_SESSION['usuario_regis'];
 
 ?>
 <!DOCTYPE html>
@@ -57,9 +57,9 @@ $usuario_admin = $_SESSION['usuario_admin'];
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     
     <ul class="nav navbar-nav">
-      <li><a href="#"><?php echo $nombre_personal_admin . " " . $apellido_p_admin; ?></a></li>
-      <li><a href="#"><?php echo $lada_admin,$telefono_admin; ?></a></li>
-      <li><a href="#"><?php echo $sede_admin,$cupo_admin; ?></a></li>
+      <li><a href="#"><?php echo $nombre_personal_regis . " " . $apellido_p_regis; ?></a></li>
+      <li><a href="#"><?php echo $lada_regis,$telefono_regis; ?></a></li>
+      <li><a href="#"><?php echo $sede_regis,$cupo_regis; ?></a></li>
     </ul>
  
     <ul class="nav navbar-nav navbar-right">
