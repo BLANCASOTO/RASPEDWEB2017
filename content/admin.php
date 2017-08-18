@@ -12,12 +12,12 @@ echo $cupo;
     <title>RASPED</title>
  
     <!-- CSS de Bootstrap -->
-    <!-- Versión compilada y comprimida del CSS de Bootstrap -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
-
-    <!-- Tema opcional personal.css -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
     <!-- Asignar icono personalizado al sitio -->
     <link rel="icon" type="image/png" href="https://image.ibb.co/hksXN5/RASPED.png" />
   </head>
@@ -46,6 +46,11 @@ echo $cupo;
 
     
   </body>
-  <!-- Versión compilada y comprimida del JavaScript de Bootstrap -->
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+  <!-- Librería jQuery requerida por los plugins de JavaScript -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+ 
+    <!-- Todos los plugins JavaScript de Bootstrap -->
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="bootstrap/js/npm.js"></script>
 </html>
