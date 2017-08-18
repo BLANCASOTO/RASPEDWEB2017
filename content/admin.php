@@ -39,7 +39,6 @@ echo $cupo;
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
       <li><a href="#">Nombre</a></li>
       <li><a href="#">Telefono</a></li>
       <li><a href="#">Cupo</a></li>
@@ -48,16 +47,16 @@ echo $cupo;
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-          Menú #2 <b class="caret"></b>
+          Opciones <b class="caret"></b>
         </a>
         <ul class="dropdown-menu">
-          <li><a href="#">Horarios</a></li>
+          <li><a href="horarios.php">Horarios</a></li>
           <li class="divider"></li>
-          <li><a href="#">Personal</a></li>
+          <li><a href="personal.php">Personal</a></li>
           <li class="divider"></li>
-          <li><a href="#">Mi cuenta</a></li>
+          <li><a href="mi_cuenta.php">Mi cuenta</a></li>
           <li class="divider"></li>
-          <li><a href="#">Cerrar Sesiona</a></li>
+          <li><a href="cerrar_sesion.php">Cerrar Sesion</a></li>
         </ul>
       </li>
     </ul>
@@ -65,9 +64,9 @@ echo $cupo;
 </nav>
 
 <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-  <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
-  <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+  <li class="active"><a data-toggle="tab" href="#home">Asistencias</a></li>
+  <li><a data-toggle="tab" href="#menu1">Retardos</a></li>
+  <li><a data-toggle="tab" href="#menu2">Faltas</a></li>
 </ul>
 
 <div class="tab-content">
@@ -75,26 +74,20 @@ echo $cupo;
     <table class="table table-striped">
     <thead>
       <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Email</th>
+        <th>cupo</th>
+        <th>nombre</th>
+        <th>fecha</th>
+        <th>hora entrada</th>
       </tr>
     </thead>
     <tbody>
+      <?php
+      ?>
       <tr>
         <td>John</td>
         <td>Doe</td>
         <td>john@example.com</td>
-      </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
+        <td>john@example.com</td>
       </tr>
     </tbody>
   </table>
