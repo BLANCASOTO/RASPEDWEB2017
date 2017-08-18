@@ -16,6 +16,9 @@ echo $cupo;
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
  
 <!-- Tema opcional -->
+<link rel="stylesheet" href="personal.css">
+
+    <!-- Tema opcional personal.css -->
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
 
     <!-- Asignar icono personalizado al sitio -->
