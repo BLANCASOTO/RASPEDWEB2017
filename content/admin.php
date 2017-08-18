@@ -27,6 +27,66 @@ echo $cupo;
   <body>
     <div class="container">
   <!-- Content here -->
+      <nav class="navbar navbar-default" role="navigation">
+  <!-- El logotipo y el icono que despliega el menú se agrupan
+       para mostrarlos mejor en los dispositivos móviles -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse"
+            data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Desplegar navegación</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">Logotipo</a>
+  </div>
+ 
+  <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+       otro elemento que se pueda ocultar al minimizar la barra -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Enlace #1</a></li>
+      <li><a href="#">Enlace #2</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          Menú #1 <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Acción #1</a></li>
+          <li><a href="#">Acción #2</a></li>
+          <li><a href="#">Acción #3</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Acción #4</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Acción #5</a></li>
+        </ul>
+      </li>
+    </ul>
+ 
+    <form class="navbar-form navbar-left" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Buscar">
+      </div>
+      <button type="submit" class="btn btn-default">Enviar</button>
+    </form>
+ 
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">Enlace #3</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          Menú #2 <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Acción #1</a></li>
+          <li><a href="#">Acción #2</a></li>
+          <li><a href="#">Acción #3</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Acción #4</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
 
 <ul class="nav nav-tabs">
   <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
@@ -36,8 +96,23 @@ echo $cupo;
 
 <div class="tab-content">
   <div id="home" class="tab-pane fade in active">
-    <h3>HOME</h3>
-    <p>Some content.</p>
+    <table>
+<tbody>
+  <!-- Aplicadas en las filas -->
+  <tr class="active">...</tr>
+  <tr class="success">...</tr>
+  <tr class="warning">...</tr>
+  <tr class="danger">...</tr>
+ 
+  <!-- Aplicadas en las celdas (<td> o <th>) -->
+  <tr>
+    <td class="active">...</td>
+    <td class="success">...</td>
+    <td class="warning">...</td>
+    <td class="danger">...</td>
+  </tr>
+</tbody>
+</table>
   </div>
   <div id="menu1" class="tab-pane fade">
     <h3>Menu 1</h3>
