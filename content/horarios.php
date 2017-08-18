@@ -95,7 +95,7 @@ $usuario_admin = $_SESSION['usuario_admin'];
     <tbody>
       <?php
       //generamos la consulta
-$sql = "$sql = "select * from horarios";";
+$sql = "select * from horarios";
       
 if(!$result = mysqli_query($conexion, $sql)) die();
 
