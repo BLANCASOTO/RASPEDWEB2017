@@ -94,14 +94,29 @@ div.tab button.active {
 <p>Click on the buttons inside the tabbed menu:</p>
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+  <button class="tablinks" onclick="openCity(event, 'London')">Asistencias</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Retardos</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Faltas</button>
 </div>
 
 <div id="London" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
+  <table>
+<tbody>
+  <!-- Aplicadas en las filas -->
+  <tr class="active">...</tr>
+  <tr class="success">...</tr>
+  <tr class="warning">...</tr>
+  <tr class="danger">...</tr>
+ 
+  <!-- Aplicadas en las celdas (<td> o <th>) -->
+  <tr>
+    <td class="active">...</td>
+    <td class="success">...</td>
+    <td class="warning">...</td>
+    <td class="danger">...</td>
+  </tr>
+</tbody>
+</table>
 </div>
 
 <div id="Paris" class="tabcontent">
