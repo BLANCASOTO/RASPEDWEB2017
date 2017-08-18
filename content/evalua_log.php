@@ -92,7 +92,7 @@ $_SESSION['usuario_admin'] = $usuario;
 }else if($usuario == "2"){
     if($contrasena_db == $contrasena_ing){
         session_start();
-$_SESSION['id_personal_admin'] = $id_personal;
+/*$_SESSION['id_personal_admin'] = $id_personal;
 $_SESSION['sede_admin'] = $sede;
 $_SESSION['cupo_admin'] = $cupo;
 $_SESSION['nombre_personal_admin'] = $nombre_personal;
@@ -103,7 +103,7 @@ $_SESSION['telefono_admin'] = $telefono;
 $_SESSION['contrasena_admin'] = $contrasena;
 $_SESSION['horario_admin'] = $horario;
 $_SESSION['puesto_admin'] = $puesto;
-$_SESSION['usuario_admin'] = $usuario;
+$_SESSION['usuario_admin'] = $usuario;*/
         header("location:admin.php");
     }else{
         echo "contrasenia o telefono incorrecto";
