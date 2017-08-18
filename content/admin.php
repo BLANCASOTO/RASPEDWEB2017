@@ -57,7 +57,7 @@ $usuario_admin = $_SESSION['usuario_admin'];
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     
     <ul class="nav navbar-nav">
-      <li><a href="#"><?php echo $nombre_personal_admin,$apellido_p_admin; ?></a></li>
+      <li><a href="#"><?php echo $nombre_personal_admin . " " . $apellido_p_admin; ?></a></li>
       <li><a href="#"><?php echo $lada_admin,$telefono_admin; ?></a></li>
       <li><a href="#"><?php echo $sede_admin,$cupo_admin; ?></a></li>
     </ul>
