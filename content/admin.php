@@ -12,8 +12,9 @@ echo $cupo;
     <title>RASPED</title>
  
     <!-- CSS de Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
-          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
+    <link href="css/bootstrap.reboot.css" rel="stylesheet">
     
     <!-- Asignar icono personalizado al sitio -->
     <link rel="icon" type="image/png" href="https://image.ibb.co/hksXN5/RASPED.png" />
