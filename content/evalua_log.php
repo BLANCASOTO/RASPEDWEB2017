@@ -6,6 +6,7 @@ $conexion = mysqli_connect($server, $user, $pass,$bd)
 or die("Ha sucedido un error inexperado en la conexion de la base de datos");
 
 //solicitamos las variables
+$telefono = $_REQUEST['telefono'];
 $contrasena_ing = $_REQUEST['contrasena'];
 $telefono = $_REQUEST['telefono'];
 
@@ -20,7 +21,6 @@ $nombre_personal = "null";
 $apellido_p = "null";
 $apellido_m = "null";
 $lada = "null";
-$telefono = "null";
 $contrasena = "null";
 $horario = "null";
 $puesto = "null";
@@ -65,7 +65,7 @@ $horario = $row['horario'];
 $puesto = $row['puesto'];
 $usuario = $row['usuario'];
 }
-/*   
+  
 //desconectamos la base de datos
 $close = mysqli_close($conexion) 
 or die("Ha sucedido un error inexperado en la desconexion de la base de datos");
@@ -148,7 +148,7 @@ $_SESSION['usuario_regis'] = $usuario;
     }
 }else{
     "error al validar datos";
-}*/
+}
 echo $contrasena_db . ", " . $contrasena_ing;
 
 ?>
