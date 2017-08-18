@@ -53,7 +53,7 @@ if($usuario == "1"){
 }else if($usuario == "2"){
     if($contrasena_db == $contrasena_ing){
         session_start();
-        $_SESSION["cupo"] = $cupo;
+        $_SESSION["cupo_admin"] = $cupo;
         header("location:admin.php");
     }else{
         echo "contrasenia o telefono incorrecto";
@@ -61,7 +61,7 @@ if($usuario == "1"){
 }else if($usuario == "3"){
     if($contrasena_db == $contrasena_ing){
         session_start();
-        $_SESSION["cupo"] = $cupo;
+        $_SESSION["cupo_user"] = $cupo;
         header("location:user.php");
     }else{
         echo "contrasenia o telefono incorrecto";
@@ -69,7 +69,7 @@ if($usuario == "1"){
 }else if($usuario == "4"){
     if($contrasena_db == $contrasena_ing){
         session_start();
-        $_SESSION["cupo"] = $cupo;
+        $_SESSION["cupo_regis"] = $cupo;
         header("location:regis.php");
     }else{
         echo "contrasenia o telefono incorrecto";
