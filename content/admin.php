@@ -53,4 +53,5 @@ echo $cupo;
   </body>
   <!-- Versión compilada y comprimida del JavaScript de Bootstrap -->
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="personal.js"></script>
 </html>
