@@ -1,5 +1,12 @@
 <?php
 session_start();
+
+require_once ('mysql-login.php');
+//Creamos la conexión
+$conexion = mysqli_connect($server, $user, $pass,$bd) 
+or die("Ha sucedido un error inexperado en la conexion de la base de datos");
+mysqli_set_charset($conexion, "utf8"); 
+
 $cupo = $_SESSION['cupo'];
 echo $cupo;
 ?>
@@ -82,13 +89,32 @@ echo $cupo;
     </thead>
     <tbody>
       <?php
+      //generamos la consulta
+$sql = "select P.id_personal, concat(C.fk_sede,C.cupo) as cupo, A.id_asistencias, P.nombre_personal, P.apellido_m, P.apellido_p,
+F.fecha, A.hr_entrada, A.hr_comida_i, A.hr_comida_f, A.hr_salida
+from personal P, asistencias A, fechas F, cupos C
+where A.fk_personal = P.id_personal and
+A.fk_fecha = F.id_fecha and
+P.fk_cupo = C.id_cupo and
+retardo = false;";
+      
+if(!$result = mysqli_query($conexion, $sql)) die();
+
+while($row = mysqli_fetch_array($result)) {
+  echo "<tr>";
+  
+  $cupo = $row['cupo'];
+  echo "<td>" . $cupo . "</td>";
+  $nombre_personal = $row['nombre_personal'];
+  echo "<td>" . $nombre_personal . "</td>";
+  $fecha = $row['fecha'];
+  echo "<td>" . $fecha . "</td>";
+  $hr_entrada = $row['hr_entrada'];
+  echo "<td>" . $hr_entrada . "</td>";
+  
+  echo "<tr>";
+}
       ?>
-      <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-        <td>john@example.com</td>
-      </tr>
     </tbody>
   </table>
   </div>
