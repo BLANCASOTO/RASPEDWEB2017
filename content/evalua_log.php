@@ -51,7 +51,7 @@ mysqli_set_charset($conexion, "utf8"); //formato de datos utf8
 if(!$result = mysqli_query($conexion, $sql)) die();
 
 while($row = mysqli_fetch_array($result)) { 
-    $contrasena_db=$row['contrasena'];
+$contrasena_db = $row['contrasena'];
     $id_personal = $row['id_personal'];
 $sede = $row['sede'];
 $cupo = $row['cupo'];
