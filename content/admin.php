@@ -7,8 +7,19 @@ $conexion = mysqli_connect($server, $user, $pass,$bd)
 or die("Ha sucedido un error inexperado en la conexion de la base de datos");
 mysqli_set_charset($conexion, "utf8"); 
 
-$cupo = $_SESSION['cupo'];
-echo $cupo;
+$id_personal_admin = $_SESSION['id_personal_admin'];
+$sede_admin =$_SESSION['sede_admin'];
+$cupo_admin = $_SESSION['cupo_admin'];
+$nombre_personal_admin = $_SESSION['nombre_personal_admin'];
+$apellido_p_admin = $_SESSION['apellido_p_admin'];
+$apellido_m_admin = $_SESSION['apellido_m_admin'];
+$lada_admin = $_SESSION['lada_admin'];
+$telefono_admin = $_SESSION['telefono_admin'];
+$contrasena_admin = $_SESSION['contrasena_admin'];
+$horario_admin = $_SESSION['horario_admin'];
+$puesto_admin = $_SESSION['puesto_admin'];
+$usuario_admin = $_SESSION['usuario_admin'];
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -46,9 +57,9 @@ echo $cupo;
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     
     <ul class="nav navbar-nav">
-      <li><a href="#">Nombre</a></li>
-      <li><a href="#">Telefono</a></li>
-      <li><a href="#">Cupo</a></li>
+      <li><a href="#"><?php echo $nombre_personal_admin,$apellido_p_admin; ?></a></li>
+      <li><a href="#"><?php echo $lada_admin,$telefono_admin; ?></a></li>
+      <li><a href="#"><?php echo $sede_admin,$cupo_admin; ?></a></li>
     </ul>
  
     <ul class="nav navbar-nav navbar-right">
