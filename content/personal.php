@@ -96,7 +96,7 @@ $usuario_admin = $_SESSION['usuario_admin'];
       <?php
       //generamos la consulta
 $sql = "SELECT concat(CUP.fk_sede, CUP.cupo) as cupo,
-concat(PER.nombre_personal, ' ' ,PER.apellido_p) as nombre
+concat(PER.nombre_personal, ' ' ,PER.apellido_p) as nombre,
 concat(TEL.fk_lada,TEL.telefono) as telefono,
 HOR.hr_nombre as horario,
 PUE.nombre_puesto as puesto,
