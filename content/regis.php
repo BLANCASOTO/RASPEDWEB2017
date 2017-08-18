@@ -82,7 +82,7 @@ $usuario_admin = $_SESSION['usuario_admin'];
   </div>
 </nav>
 
-<form action="/content/insertar_asistencia.php" method="post">
+<form action="insertar_asistencia.php" method="post">
 
         <!-- Primera fila -->
         <table class="table">
@@ -123,6 +123,7 @@ $usuario_admin = $_SESSION['usuario_admin'];
           </tr>
         </table>
       </form>
+     </div> 
   </body>
     <!-- Todos los plugins JavaScript de Bootstrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
