@@ -111,25 +111,6 @@ $_SESSION['usuario_admin'] = $usuario;
 }else if($usuario == "3"){
     if($contrasena_db == $contrasena_ing){
         session_start();
-$_SESSION['id_personal_user'] = $id_personal;
-$_SESSION['sede_user'] = $sede;
-$_SESSION['cupo_user'] = $cupo;
-$_SESSION['nombre_personal_user'] = $nombre_personal;
-$_SESSION['apellido_p_admin_user'] = $apellido_p;
-$_SESSION['apellido_m_user'] = $apellido_m;
-$_SESSION['lada_user'] = $lada;
-$_SESSION['telefono_user'] = $telefono;
-$_SESSION['contrasena_user'] = $contrasena;
-$_SESSION['horario_user'] = $horario;
-$_SESSION['puesto_user'] = $puesto;
-$_SESSION['usuario_user'] = $usuario;
-        header("location:user.php");
-    }else{
-        echo "contrasenia o telefono incorrecto";
-    }
-}else if($usuario == "4"){
-    if($contrasena_db == $contrasena_ing){
-        session_start();
 $_SESSION['id_personal_regis'] = $id_personal;
 $_SESSION['sede_regis'] = $sede;
 $_SESSION['cupo_regis'] = $cupo;
@@ -143,6 +124,27 @@ $_SESSION['horario_regis'] = $horario;
 $_SESSION['puesto_regis'] = $puesto;
 $_SESSION['usuario_regis'] = $usuario;
         header("location:regis.php");
+    }else{
+        
+        echo "contrasenia o telefono incorrecto";
+    }
+}else if($usuario == "4"){
+    if($contrasena_db == $contrasena_ing){
+        session_start();
+$_SESSION['id_personal_user'] = $id_personal;
+$_SESSION['sede_user'] = $sede;
+$_SESSION['cupo_user'] = $cupo;
+$_SESSION['nombre_personal_user'] = $nombre_personal;
+$_SESSION['apellido_p_admin_user'] = $apellido_p;
+$_SESSION['apellido_m_user'] = $apellido_m;
+$_SESSION['lada_user'] = $lada;
+$_SESSION['telefono_user'] = $telefono;
+$_SESSION['contrasena_user'] = $contrasena;
+$_SESSION['horario_user'] = $horario;
+$_SESSION['puesto_user'] = $puesto;
+$_SESSION['usuario_user'] = $usuario;
+        header("location:user.php");
+        
     }else{
         echo "contrasenia o telefono incorrecto";
     }
