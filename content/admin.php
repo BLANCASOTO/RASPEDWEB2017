@@ -27,25 +27,21 @@ echo $cupo;
 <!-- Nav tabs -->
 <ul class="nav nav-tabs" role="tablist">
   <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Home</a>
+    <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Asistencias</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Profile</a>
+    <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Retardos</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Messages</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#settings" role="tab">Settings</a>
+    <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Faltas</a>
   </li>
 </ul>
 
 <!-- Tab panes -->
 <div class="tab-content">
-  <div class="tab-pane active" id="home" role="tabpanel">...</div>
-  <div class="tab-pane" id="profile" role="tabpanel">...</div>
-  <div class="tab-pane" id="messages" role="tabpanel">...</div>
-  <div class="tab-pane" id="settings" role="tabpanel">...</div>
+  <div class="tab-pane active" id="home" role="tabpanel">Asistencias</div>
+  <div class="tab-pane" id="profile" role="tabpanel">Retardos</div>
+  <div class="tab-pane" id="messages" role="tabpanel">Faltas</div>
 </div>
 
     
