@@ -68,13 +68,8 @@ $usuario_regis = $_SESSION['usuario_regis'];
           Opciones <b class="caret"></b>
         </a>
         <ul class="dropdown-menu">
-          <li><a href="horarios.php">Horarios</a></li>
-          <li class="divider"></li>
-          <li><a href="personal.php">Personal</a></li>
-          <li class="divider"></li>
-            <!-- Content here 
           <li><a href="mi_cuenta.php">Mi cuenta</a></li>
-          <li class="divider"></li>-->
+          <li class="divider"></li>
           <li><a href="cerrar_sesion.php">Cerrar Sesion</a></li>
         </ul>
       </li>
