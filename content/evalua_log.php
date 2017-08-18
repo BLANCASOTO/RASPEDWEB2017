@@ -63,7 +63,7 @@ $telefono = $row['telefono'];
 $contrasena = $row['contrasena'];
 $horario = $row['horario'];
 $puesto = $row['puesto'];
-$usuario = $row['usuario'];
+$usuario = $row['id_usuario'];
 }
   
 //desconectamos la base de datos
@@ -147,6 +147,6 @@ $_SESSION['usuario_regis'] = $usuario;
         echo "contrasenia o telefono incorrecto";
     }
 }else{
-    "error al validar datos";
+    echo "error al validar datos";
 }
 ?>
