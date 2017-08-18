@@ -160,8 +160,40 @@ while($row = mysqli_fetch_array($result)) {
   </table>
   </div>
   <div id="menu2" class="tab-pane fade">
-    <h3>Menu 2</h3>
-    <p>Some content in menu 2.</p>
+    <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>cupo</th>
+        <th>nombre</th>
+        <th>fecha</th>
+      </tr>
+    </thead>
+    <tbody>
+      <?php
+      //generamos la consulta
+$sql = "select P.id_personal, concat(C.fk_sede,C.cupo) as cupo, I.id_falta, P.nombre_personal, P.apellido_m, P.apellido_p, F.fecha
+from personal P, faltas I, fechas F, cupos C
+where I.fk_personal = P.id_personal and
+I.fk_fecha = F.id_fecha and
+P.fk_cupo = C.id_cupo";
+      
+if(!$result = mysqli_query($conexion, $sql)) die();
+
+while($row = mysqli_fetch_array($result)) {
+  echo "<tr>";
+  
+  $cupo = $row['cupo'];
+  echo "<td>" . $cupo . "</td>";
+  $nombre_personal = $row['nombre_personal'];
+  echo "<td>" . $nombre_personal . "</td>";
+  $fecha = $row['fecha'];
+  echo "<td>" . $fecha . "</td>";
+  
+  echo "<tr>";
+}
+      ?>
+    </tbody>
+  </table>
   </div>
 </div>
       </div>
