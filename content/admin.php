@@ -12,8 +12,6 @@ echo $cupo;
     <title>RASPED</title>
  
     <!-- CSS de Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
@@ -46,9 +44,6 @@ echo $cupo;
 </div>
   </body>
 </html>
-  <!-- Librería jQuery requerida por los plugins de JavaScript -->
-    <script src="http://code.jquery.com/jquery.js"></script>
- 
     <!-- Todos los plugins JavaScript de Bootstrap -->
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.min.js"></script>
