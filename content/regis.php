@@ -68,7 +68,8 @@ $usuario_regis = $_SESSION['usuario_regis'];
           Opciones <b class="caret"></b>
         </a>
         <ul class="dropdown-menu">
-          <li><a href="mi_cuenta.php">Mi cuenta</a></li>
+          <!-- 
+          <li><a href="mi_cuenta.php">Mi cuenta</a></li> -->
           <li class="divider"></li>
           <li><a href="cerrar_sesion.php">Cerrar Sesion</a></li>
         </ul>
@@ -83,7 +84,7 @@ $usuario_regis = $_SESSION['usuario_regis'];
         <table class="table">
           <tr>
             <td><!-- Tipos de Usuario -->
-              <label for="sel1">tipo de usuario</label>
+              <label for="sel1">tipo de entrada</label>
               <select class="form-control" id="tiempo" name="tiempo">
                 <option>hr_entrada</option>
                 <option>hr_comida_i</option>
