@@ -72,7 +72,8 @@ $usuario_admin = $_SESSION['usuario_admin'];
           <li class="divider"></li>
           <li><a href="personal.php">Personal</a></li>
           <li class="divider"></li>
-          <li><a href="mi_cuenta.php">Mi cuenta</a></li>
+           <!-- Asignar icono personalizado al sitio
+          <li><a href="mi_cuenta.php">Mi cuenta</a></li> -->
           <li class="divider"></li>
           <li><a href="cerrar_sesion.php">Cerrar Sesion</a></li>
         </ul>
