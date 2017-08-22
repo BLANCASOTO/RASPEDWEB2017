@@ -79,7 +79,13 @@ $usuario_regis = $_SESSION['usuario_regis'];
 </nav>
 
 <form action="insertar_asistencia.php" method="post">
-
+$fecha_actual = strtotime(date("d-m-Y H:i:00",time()));
+  $fecha_entrada = strtotime("19-11-2008 21:00:00");
+  if($fecha_actual > 
+  $fecha_entrada){echo "La fecha entrada ya ha pasado";
+  }
+  else
+  {echo "Aun falta algun tiempo";}
         <!-- Primera fila -->
         <table class="table">
           <tr>
