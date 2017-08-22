@@ -6,6 +6,9 @@ require_once ('mysql-login.php');
 $conexion = mysqli_connect($server, $user, $pass,$bd) or die("Ha sucedido un error inexperado en la conexion de la base de datos");
 mysqli_set_charset($conexion, "utf8"); 
 
+
+$fecha = 'fecha'; 
+
  echo $fecha." es menor o igual a ".date(j);
 ?>
  
