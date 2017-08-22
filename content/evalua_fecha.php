@@ -5,6 +5,7 @@ require_once ('mysql-login.php');
 $conexion = mysqli_connect($server, $user, $pass,$bd) or die("Ha sucedido un error inexperado en la conexion de la base de datos");
 mysqli_set_charset($conexion, "utf8"); 
 
+<!--
 $fecha = $_SESSION['fecha'];
 $id_personal_regis = $_SESSION['id_personal_regis'];
 
@@ -21,7 +22,7 @@ $fecha_actual = strtotime(date("d-m-Y H:i:00",)); 
  {
  echo "Aun falta algun tiempo";
  }
- 
+ -->
  
  
  
